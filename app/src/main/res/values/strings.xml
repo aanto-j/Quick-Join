@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Quick Join</string>
+    <string-array name="regulations">
+        <item>2017</item>
+        <item>2021</item>
+    </string-array>
+    <string-array name="departments">
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>AI/DS</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+    </string-array>
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string-array name="time">
+        <item>9:00-9:45</item>
+        <item>10:00-10:45</item>
+        <item>11:00-11:45</item>
+        <item>12:00-12:45</item>
+        <item>2:00-2:45</item>
+    </string-array>
+    <string name="title_activity_view_subject">ViewSubjectActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

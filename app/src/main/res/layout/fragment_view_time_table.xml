@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTimeTableFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/choose_day"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:entries="@array/days"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:id="@+id/subject1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ttbg">
+
+                    <TextView
+                        android:id="@+id/sub_code_1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:layout_margin="10dp"
+                        tools:text="MA8151" />
+
+                    <TextView
+                        android:id="@+id/disp_info_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="2017 - CSE - 2" />
+
+                    <TextView
+                        android:id="@+id/sub_name_1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_code_1"
+                        android:textSize="20dp"
+                        tools:text="Engineering Mathematics" />
+
+                    <TextView
+                        android:id="@+id/facname_1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_name_1"
+                        android:textSize="20dp"
+                        tools:text="G.Thavaselvan" />
+
+                    <TextView
+                        android:id="@+id/sub_time_1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facname_1"
+                        tools:text="9:00-9:45"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/m_link_1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/disp_info_1"
+                        android:layout_alignBaseline="@id/sub_time_1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="join"
+                        android:textColor="@color/teal_700" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/subject2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ttbg">
+
+                    <TextView
+                        android:id="@+id/sub_code_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        tools:text="MA8151" />
+
+                    <TextView
+                        android:id="@+id/disp_info_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="2017 - CSE - 2" />
+
+                    <TextView
+                        android:id="@+id/sub_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sub_code_2"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        tools:text="Engineering Mathematics" />
+
+                    <TextView
+                        android:id="@+id/facname_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sub_name_2"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        tools:text="G.Thavaselvan" />
+
+                    <TextView
+                        android:id="@+id/sub_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facname_2"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="9:00-9:45" />
+
+                    <Button
+                        android:id="@+id/m_link_2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/disp_info_2"
+                        android:layout_alignBaseline="@id/sub_time_2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="join"
+                        android:textColor="@color/teal_700" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/subject3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ttbg">
+
+                    <TextView
+                        android:id="@+id/sub_code_3"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:layout_margin="10dp"
+                        tools:text="MA8151" />
+
+                    <TextView
+                        android:id="@+id/disp_info_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="2017 - CSE - 2" />
+
+                    <TextView
+                        android:id="@+id/sub_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sub_code_3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        tools:text="Engineering Mathematics" />
+
+                    <TextView
+                        android:id="@+id/facname_3"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_name_3"
+                        android:textSize="20dp"
+                        tools:text="G.Thavaselvan" />
+
+                    <TextView
+                        android:id="@+id/sub_time_3"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facname_3"
+                        tools:text="9:00-9:45"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/m_link_3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/disp_info_3"
+                        android:layout_alignBaseline="@id/sub_time_3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="join"
+                        android:textColor="@color/teal_700" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/subject4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ttbg">
+
+                    <TextView
+                        android:id="@+id/sub_code_4"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:layout_margin="10dp"
+                        tools:text="MA8151" />
+
+                    <TextView
+                        android:id="@+id/disp_info_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="2017 - CSE - 2" />
+
+                    <TextView
+                        android:id="@+id/sub_name_4"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_code_4"
+                        android:textSize="20dp"
+                        tools:text="Engineering Mathematics" />
+
+                    <TextView
+                        android:id="@+id/facname_4"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_name_4"
+                        android:textSize="20dp"
+                        tools:text="G.Thavaselvan" />
+
+                    <TextView
+                        android:id="@+id/sub_time_4"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facname_4"
+                        tools:text="9:00-9:45"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/m_link_4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/disp_info_4"
+                        android:layout_alignBaseline="@id/sub_time_4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="join"
+                        android:textColor="@color/teal_700" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/subject5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ttbg">
+
+                    <TextView
+                        android:id="@+id/sub_code_5"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:layout_margin="10dp"
+                        tools:text="MA8151" />
+
+                    <TextView
+                        android:id="@+id/disp_info_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        tools:text="2017 - CSE - 2" />
+
+                    <TextView
+                        android:id="@+id/sub_name_5"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_code_5"
+                        android:textSize="20dp"
+                        tools:text="Engineering Mathematics" />
+
+                    <TextView
+                        android:id="@+id/facname_5"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/sub_name_5"
+                        android:textSize="20dp"
+                        tools:text="G.Thavaselvan" />
+
+                    <TextView
+                        android:id="@+id/sub_time_5"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facname_5"
+                        tools:text="9:00-9:45"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/m_link_5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/disp_info_5"
+                        android:layout_alignBaseline="@id/sub_time_5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="@color/white"
+                        android:text="join"
+                        android:textColor="@color/teal_700" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

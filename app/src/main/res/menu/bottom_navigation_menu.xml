@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/quick_join"
+        android:title="Quick Join"
+        android:icon="@drawable/quickjoin"/>
+    <item android:id="@+id/viewtt"
+        android:title="View Time Table"
+        android:icon="@drawable/viewtt"/>
+</menu>
